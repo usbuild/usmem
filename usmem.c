@@ -4,8 +4,9 @@
 #define MAX_CHUNKS      255
 #define CHUNK_TOP       2048
 
-#define obj_allocate us_alloc
-#define obj_deallocate us_dealloc
+#define obj_allocate        us_alloc
+#define obj_deallocate      us_dealloc
+#define new_obj_allocator   new_us_allocator
 
 static void *
 Malloc(size_t size) {

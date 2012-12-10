@@ -30,8 +30,8 @@ typedef struct uws_obj_allocator {
 
 typedef pObjAllocator us_allocator;
 
-void * us_alloc(pObjAllocator objAlloc, size_t size);
-void us_dealloc(pObjAllocator objAlloc, void *p, size_t size);
-pObjAllocator new_obj_allocator();
+extern void * us_alloc(us_allocator, size_t);
+extern void us_dealloc(us_allocator, void*, size_t);
+extern us_allocator new_us_allocator();
 
 #endif

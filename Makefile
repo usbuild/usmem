@@ -4,4 +4,4 @@ libusmem.so: usmem.o
 usmem.o:usmem.c
 	$(CC) -fPIC $^ -c -o $@
 clean:
-	-rm usmem.o libusmem.so
+	-rm *.o libusmem.so
